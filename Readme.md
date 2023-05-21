@@ -43,6 +43,13 @@
 ![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/644a10bf-b8d7-43ae-b469-65a6de0059ac)
 *Скачиваем и в файл Persona-Server в папку с нашим rpm пакетом :
 ![Снимок экрана от 2023-05-21 17-23-21](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/5653e630-8bfa-46dc-9f6a-262e8277ee07)
+* Используем команду createrepo для инициализации нашего репозитория
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/f0ece012-a33d-4974-8f38-6314f64a4f16)
+*Как мы видим в 1 строке в нашем репозиотрии два пакета.
+* Для прозрачности настроим в NGINX доступ к листингу каталога. Отредактируем файл default.conf, находящийся в директории /etc/nginx/conf.d/
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/77cd4ce6-8db5-4de8-b862-5d265a79214f)
+*Добавим в этот файл директиву autoindex со значемнием "on"
+![Снимок экрана от 2023-05-21 17-29-17](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/6173b973-56a6-4e0b-bdc3-87b45236db2a)
 
 
 
