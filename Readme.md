@@ -42,7 +42,8 @@
 * Используя команду cp копируем туда наш собранный RPM
 ![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/644a10bf-b8d7-43ae-b469-65a6de0059ac)
 *Скачиваем и в файл Persona-Server в папку с нашим rpm пакетом :
-![Снимок экрана от 2023-05-21 17-23-21](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/5653e630-8bfa-46dc-9f6a-262e8277ee07)
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/928c21dd-66cd-4c0c-ac3a-4744efc75fb4)
+
 * Используем команду createrepo для инициализации нашего репозитория
 ![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/f0ece012-a33d-4974-8f38-6314f64a4f16)
 *Как мы видим в 1 строке в нашем репозиотрии два пакета.
