@@ -51,6 +51,10 @@
 *Добавим в этот файл директиву autoindex со значемнием "on"
 ![Снимок экрана от 2023-05-21 17-29-17](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/6173b973-56a6-4e0b-bdc3-87b45236db2a)
 
+* Проверяем коректность конфигурационног файла командой nginx -t 
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/40d474dc-e411-44b5-a288-64617c8a6696)
+* И перезапустим веб сервер командой nginx -s reload :
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/efa82511-33cf-4bf3-8fda-9296c1715d86)
 
 
 
