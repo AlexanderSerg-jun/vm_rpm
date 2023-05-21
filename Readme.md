@@ -55,8 +55,15 @@
 ![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/40d474dc-e411-44b5-a288-64617c8a6696)
 * И перезапустим веб сервер командой nginx -s reload :
 ![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/efa82511-33cf-4bf3-8fda-9296c1715d86)
+*Проверим через браузер firefox ( перейдя по адресу http://192.168.56.101/repo/)
 
-
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/106043d9-4b1f-494d-8198-efe4adbc1b50)
+* А так же проверим на самой машине используя консольный браузер lynx( т.к. по умолчанию данный пакет отсутствует устновим его используя команду yum install lynx)
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/6f2449dc-6307-4b69-84d3-ff1ee37c8094)
+*Как видно из скринов наши rpm успешно размещены
+*Проверим работоспособность репозитория, добавив его в /etc/yum.repos.d
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/0990f64a-7c86-4ed5-a734-485761630fe5)
+*Теперь необходимо убедиться, что репозиторий подключен и посмотрим его содержимое:
 
 
 
