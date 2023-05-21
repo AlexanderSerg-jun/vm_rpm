@@ -65,7 +65,9 @@
 *Проверим работоспособность репозитория, добавив его в /etc/yum.repos.d
 ![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/0990f64a-7c86-4ed5-a734-485761630fe5)
 *Теперь необходимо убедиться, что репозиторий подключен и посмотрим его содержимое:
-
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/afe7a127-8fcf-466c-8b42-f3b636bd7a51)
+*установим репозиторий percona-release:
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/0e4a32f3-5801-48b9-88ee-e83ef0f4ae9b)
 
 
 
