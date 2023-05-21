@@ -18,5 +18,35 @@
  *Рзархивируем исходники ssl 
 ![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/621f9e20-85a2-4d6a-8f66-01f0f9a72f9d)
 
+*Заранее проставим все зависимости , что бы в процессе сборки не было ошибок:
+ ![Снимок экрана от 2023-05-21 16-58-30](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/054827d0-0c23-4154-a14c-e5268770d262)
+
+*Отредактируем  файл nginx.spec, указав путь до каталога openssl, в нашем случае это /root/openssl-1.1.1s
+![Снимок экрана от 2023-05-21 17-01-02](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/52df8d70-bdc5-4f8f-875c-3e9ff98f0d93)
+*Теперь приступим к сборке пакета :
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/962bcd1e-c894-452f-bdda-5257ca75fba1)
+*Убедимся что пакеты были созданы :
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/22010e0d-110a-4fa0-bb2e-ca9efaeff192)
+*Установим наш rpm  пакет и проверим что nginx работает( для этого используем команды systemctl start nginx ( запуск nginx) и команду systemctl status nginx( проверка что nginx работает)  :
+![Снимок экрана от 2023-05-21 17-06-27](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/13799171-fe7a-4f24-a7ff-17038f514ed7)
+* Из данного снимка мы видим, что  nginx имеет статус active(running) , что свидетельствует о том что nginx запущен.
+![Снимок экрана от 2023-05-21 17-06-39](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/401306e7-e56d-4c0d-8a77-3a94231eff19)
+* Узнаем ip адрес машины командой "ip a", как мы видим наша машина имеет адрес 192.168.56.101
+![Снимок экрана от 2023-05-21 17-11-13](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/fc470200-2d4f-4031-8365-90588b74e2ca)
+*Введем этот адрес в адресную строку браузера , что бы еще раз убедиться что веб сервер nginx запущен и работает 
+![Снимок экрана от 2023-05-21 17-12-12](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/99ef5455-d3ed-4425-9369-ba2a81c33a02)
+*Данный пакет мы будем использовать для размещения его в своем репозитории
+2.Создать свой репозиторий и разместить там ранее собранный RPM
+*Приступим к созданию собственного репозитория. По умолчанию nginx распологается в папке  /usr/share/nginx/html. Используя команду mkdir создадим там дерикторию repo
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/0e04ffe4-173d-4898-b0de-c997392ad18b)
+* Используя команду cp копируем туда наш собранный RPM
+![изображение](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/644a10bf-b8d7-43ae-b469-65a6de0059ac)
+*Скачиваем и в файл Persona-Server в папку с нашим rpm пакетом :
+![Снимок экрана от 2023-05-21 17-23-21](https://github.com/AlexanderSerg-jun/vm_rpm/assets/85576634/5653e630-8bfa-46dc-9f6a-262e8277ee07)
+
+
+
+
+
 
 
